@@ -11,7 +11,6 @@ body {
 }
 
 ul {
-    text-align: center;
     margin:0px; 
     padding:0px;
     padding-top: 10px;
@@ -23,6 +22,20 @@ ul {
     margin-right: 30%;
     background-color: #e4bf70;
     color:#2e2e2e;
+}
+
+#statsder, #statsizq {
+    width: 50%;
+    float: left;
+}
+
+#statsizq {
+    text-align: right;
+    line-height: 1.35;  
+}
+
+#statsder {
+    text-align: left;
 }
 
 #canvas-container {
