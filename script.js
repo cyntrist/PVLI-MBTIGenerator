@@ -91,9 +91,9 @@ window.onload = function () {
         chartId.config.data.datasets[0].data[3] = document.getElementById('humor').value;
         chartId.config.data.datasets[0].data[4] = document.getElementById('suerte').value;
         chartId.update();
-        var image = chartId.toBase64Image();
-        console.log('>>> Inserta este enlace en la barra de tu navegador: <<<');
-        console.log(image);
+        //var image = chartId.toBase64Image();
+        //console.log('>>> Inserta este enlace en la barra de tu navegador: <<<');
+        //console.log(image);
     });
 
     var form2 = document.querySelector('form[name=descargar]');
