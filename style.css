@@ -39,15 +39,15 @@ ul {
 }
 
 #izq {
-    width: 40%;
+    width: 30%;
+    padding-left: 10%;
     float:left;
 }
 
 #canvas-container {
     text-align:center;
-    padding-top: 20px;
     float: left;
-    width: 40%;
+    width: 50%;
 }
 
 #canvas-parag, h1, #stats {
