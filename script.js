@@ -24,6 +24,11 @@ window.onload = function () {
             },
         },
         options: {
+            animation: {
+                onComplete: function () {
+                  console.log(chartId.toBase64Image());
+                },
+            },
             plugins: {
                 legend: {
                     display: false,
@@ -76,9 +81,6 @@ window.onload = function () {
             }
         },
     });
-    var image = chartId.toBase64Image();
-    console.log('>>> Inserta este enlace en la barra de tu navegador: <<<');
-    console.log(image);
 
     var form = document.querySelector('form[name=crear]');
     form.addEventListener('submit', function (event) {
@@ -92,5 +94,14 @@ window.onload = function () {
         var image = chartId.toBase64Image();
         console.log('>>> Inserta este enlace en la barra de tu navegador: <<<');
         console.log(image);
+    });
+
+    var form2 = document.querySelector('form[name=descargar]');
+    form2.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var a = document.createElement('a');
+        a.href = chartId.toBase64Image();
+        a.download = 'chart.png';
+        a.click();
     });
 }
