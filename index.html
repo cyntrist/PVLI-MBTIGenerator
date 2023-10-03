@@ -9,48 +9,50 @@
 <body>
     <h1>¡Crea tu propio personaje de MBTI!</h1>
     <p id = "recom"> Recomendación: distribuye 13 puntos entre las estadísticas.</p>
-    <div class = "stats">
-        <form name="crear">
-            <p class = "stats">
-                <div>
-                    <ul id = "statsizq">
-                        <li>Carisma:    
-                        </li>
-                        <li>Amabilidad:
-                        </li>
-                        <li>Inteligencia:
-                        </li>
-                        <li>Humor:
-                        </li>
-                        <li>Suerte:
-                        </li>
-                    </ul>
-                </div>
-                <div id = "statsder">
-                    <ul>
-                        <li>   
-                            <input id="carisma" type="number" value="4" min="0" max="5">
-                        </li>
-                        <li>
-                            <input id="amabilidad" type="number" value="5" min="0" max="5">
-                        </li>
-                        <li>
-                            <input id="inteligencia" type="number" value="2" min="0" max="5">
-                        </li>
-                        <li>
-                            <input id="humor" type="number" value="4" min="0" max="5">
-                        </li>
-                        <li>
-                            <input id="suerte" type="number" value="1" min="0" max="5">
-                        </li>
-                    </ul>
-                </div>
-                <button type="submit">Cambiar</button> 
-            </p>
-        </form>
-        <form name="descargar">
-            <button type="descargar">Descargar</button>
-        </form>
+    <div id = "izq">
+        <div class = "stats">
+            <form name="crear">
+                <p class = "stats">
+                    <div>
+                        <ul id = "statsizq">
+                            <li>Carisma:    
+                            </li>
+                            <li>Amabilidad:
+                            </li>
+                            <li>Inteligencia:
+                            </li>
+                            <li>Humor:
+                            </li>
+                            <li>Suerte:
+                            </li>
+                        </ul>
+                    </div>
+                    <div id = "statsder">
+                        <ul>
+                            <li>   
+                                <input id="carisma" type="number" value="4" min="0" max="5">
+                            </li>
+                            <li>
+                                <input id="amabilidad" type="number" value="5" min="0" max="5">
+                            </li>
+                            <li>
+                                <input id="inteligencia" type="number" value="2" min="0" max="5">
+                            </li>
+                            <li>
+                                <input id="humor" type="number" value="4" min="0" max="5">
+                            </li>
+                            <li>
+                                <input id="suerte" type="number" value="1" min="0" max="5">
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit">Cambiar</button> 
+                </p>
+            </form>
+            <form name="descargar">
+                <button type="descargar">Descargar</button>
+            </form>
+        </div>    
     </div>
     <div id="canvas-container">
         <p id="canvas-parag" align="center">
