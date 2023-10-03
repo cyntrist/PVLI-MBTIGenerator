@@ -24,11 +24,6 @@ window.onload = function () {
             },
         },
         options: {
-            animation: {
-                onComplete: function () {
-                  console.log(chartId.toBase64Image());
-                },
-            },
             plugins: {
                 legend: {
                     display: false,
@@ -43,7 +38,7 @@ window.onload = function () {
                 onComplete: function () {
                     console.log(chartId.toBase64Image());
                 },
-                },
+            },
             elements: {
                 line: {
                     borderWidth: 3,
