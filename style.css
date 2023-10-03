@@ -52,6 +52,10 @@ ul {
     width: auto;
     background-color: #e6f8d6;
 }
+
+#recom {
+    color: rgb(28, 28, 28);
+}
  
 canvas {
     display: inline
